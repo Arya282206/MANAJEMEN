@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mobile Layout STIE Totalwin</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#ececec;
+      display:flex;
+      justify-content:center;
+      min-height:100vh;
+    }
+
+    .mobile-container{
+      width:100%;
+      max-width:390px;
+      min-height:100vh;
+      background:#ffffff;
+      padding:20px 16px;
+      overflow-y:auto;
+    }
+
+    /* HEADER */
+    .header-title{
+      text-align:left;
+      margin-bottom:24px;
+    }
+
+    .header-title img{
+      width:200%;
+      max-width:250px;
+      object-fit:contain;
+    }
+
+    /* CARD LIST */
+    .card-list{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+
+    /* CARD */
+    .card{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      background:#ffffff;
+      border-radius:18px;
+      padding:14px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+      transition:0.3s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-3px);
+      box-shadow:0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .row-normal{
+      flex-direction:row;
+    }
+
+    .row-reverse{
+      flex-direction:row-reverse;
+      text-align:right;
+    }
+
+    /* AVATAR */
+    .avatar{
+      flex-shrink:0;
+    }
+
+    .avatar img{
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid #0d6efd;
+    }
+
+    /* CONTENT */
+    .card-content{
+      flex:1;
+    }
+
+    .card-content h3{
+      font-size:16px;
+      font-weight:600;
+      color:#111;
+      margin-bottom:4px;
+    }
+
+    .id-number{
+      font-size:13px;
+      font-weight:500;
+      color:#0d6efd;
+      margin-bottom:8px;
+    }
+
+    .description{
+      font-size:13px;
+      line-height:1.6;
+      color:#666;
+    }
+
+    /* NAVIGATION */
+    .navigation-arrows{
+      display:flex;
+      justify-content:center;
+      gap:16px;
+      margin-top:28px;
+    }
+
+    .arrow-btn{
+      width:48px;
+      height:48px;
+      border:none;
+      border-radius:50%;
+      background:#111;
+      color:#fff;
+      font-size:18px;
+      cursor:pointer;
+      transition:0.3s ease;
+    }
+
+    .arrow-btn:hover{
+      background:#0d6efd;
+      transform:scale(1.05);
+    }
+
+    /* MOBILE */
+    @media (max-width:400px){
+
+      .mobile-container{
+        padding:16px 12px;
+      }
+
+      .card{
+        padding:12px;
+      }
+
+      .avatar img{
+        width:70px;
+        height:70px;
+      }
+
+      .card-content h3{
+        font-size:15px;
+      }
+
+      .description{
+        font-size:12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="mobile-container">
+
+    <!-- HEADER -->
+    <div class="header-title">
+      <img src="5.png" alt="Logo TM25">
+    </div>
+
+    <!-- CARD LIST -->
+    <div class="card-list">
+
+      <!-- CARD 1 -->
+      <div class="card row-normal">
+
+        <div class="avatar">
+          <img src="wm.jpg" alt="Avatar Febi Aryadi">
+        </div>
+
+        <div class="card-content">
+          <h3>AMELIA SAFIRA</h3>
+
+          <p class="id-number">
+            T012500016
+          </p>
+
+          <p class="description">
+            Logo STIE Totalwin Semarang memiliki bentuk bundar
+            dengan elemen utama berupa globe atau bola dunia.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card row-reverse">
+
+        <div class="avatar">
+          <img src="man.png" alt="Avatar Romadhon">
+        </div>
+
+        <div class="card-content">
+          <h3>ERDIANUS PUTRA</h3>
+
+          <p class="id-number">
+            T012500034
+          </p>
+
+          <p class="description">
+            Logo STIE Totalwin Semarang memiliki bentuk bundar
+            dengan elemen utama berupa globe atau bola dunia.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card row-normal">
+
+        <div class="avatar">
+          <img src="wm.jpg" alt="Avatar Romadhon">
+        </div>
+
+        <div class="card-content">
+          <h3>WINDA ESTI JAYA PUTRI</h3>
+
+          <p class="id-number">
+            T012500034
+          </p>
+
+          <p class="description">
+            Logo STIE Totalwin Semarang memiliki bentuk bundar
+            dengan elemen utama berupa globe atau bola dunia.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card row-reverse">
+
+        <div class="avatar">
+          <img src="man.png" alt="Avatar Romadhon">
+        </div>
+
+        <div class="card-content">
+          <h3>ALOYSIUS GONZAGA YUDI SA</h3>
+
+          <p class="id-number">
+            T012500034
+          </p>
+
+          <p class="description">
+            Logo STIE Totalwin Semarang memiliki bentuk bundar
+            dengan elemen utama berupa globe atau bola dunia.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="navigation-arrows">
+
+        <a href="Page4.html">
+            <button class="arrow-btn">
+                &#9664;
+            </button>
+        </a>
+    
+
+      <a href="Page6.html">
+            <button class="arrow-btn">
+                &#9654;
+            </button>
+        </a>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
